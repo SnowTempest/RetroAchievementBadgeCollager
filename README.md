@@ -1,5 +1,5 @@
 # RetroAchievement Badge Collager
-RetroAchievements Badge Scraper. Scrapes the given game ID for its badges and automatically collages them with the given number of colums.
+RetroAchievements Badge Scraper. Scrapes the given game ID for its badges and automatically collages them with the given number of columns.
 
 # Usage
 You enter in a valid game ID from the site. 
