@@ -1,7 +1,7 @@
 # RetroAchievement Badge Collager
 RetroAchievements Badge Scraper. Scrapes the given game ID for its badges and automatically collages them with the given number of colums.
 
-#Usage
+# Usage
 You enter in a valid game ID from the site. 
 
 Example : 
@@ -19,7 +19,7 @@ Afterwards the images are then collaged into one file and the downloaded images 
 ## CV2
 ## Numpy
 
-#Notes:
+# Notes:
 The program must be in an empty folder to ensure safe deletion of images. The program deletes every image from the folder other than the resulted collage. I am not responsible if you delete an important image by accident via this program's completion. You have been warned. This will be fixed eventually.
 I also do not condone using this tool to use the badges for purposes other than collaging them and using them on RetroAchievement's Discord.
 
