@@ -14,10 +14,15 @@ Afterwards the images are then collaged into one file and the downloaded images 
 
 # Libraries
 ## Requests
+Link - https://pypi.org/project/requests/
 ## OS
+Link - https://docs.python.org/3/library/os.html
 ## BS4
+Link - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 ## CV2
+Link - https://pypi.org/project/opencv-python/
 ## Numpy
+Link - https://numpy.org/install/
 
 # Notes:
 The program must be in an empty folder to ensure safe deletion of images. The program deletes every image from the folder other than the resulted collage. I am not responsible if you delete an important image by accident via this program's completion. You have been warned. This will be fixed eventually.
