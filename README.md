@@ -12,7 +12,7 @@ Once correct ID is confirmed the badges are downloaded from the site.
 Then you are asked for how many achievements you want per line.
 Afterwards the images are then collaged into one file and the downloaded images are deleted.
 
-#Libraries
+# Libraries
 ## Requests
 ## OS
 ## BS4
