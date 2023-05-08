@@ -6,10 +6,10 @@ You enter in a valid game ID from the site.
 
 Example : 
 
-If you enter 985 you will be given the badges for https://retroachievements.org/game/985.
+If the user enters 985 they will be given the badges for https://retroachievements.org/game/985.
 In this case. The game is Kirby's Avalanche | Kirby's Ghost Trap.
 Once correct ID is confirmed the badges are downloaded from the site.
-Then you are asked for how many achievements you want per line.
+Once Downloads are complete the user is asked for how many badges they would like per line.
 Afterwards the images are then collaged into one file and the downloaded images are deleted.
 
 # Libraries
