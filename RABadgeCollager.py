@@ -1,7 +1,7 @@
 __author__ = "SnowTempest"
 __copyright__ = "Copyright (C) 2022 SnowTempest"
 __license__ = "NONE"
-__version__= "1.0"
+__version__= "2.0"
 
 import requests
 import sys
@@ -22,13 +22,14 @@ global SET
 # param BADGENAMES = The list of individual bages used for deletion.
 class RetroAchievementSet:
     
-    def __init__ (self, ID, URL, BADGENUM, BADGELIST, LENGTH, BADGENAMES):
+    def __init__ (self, ID, URL, BADGENUM, BADGELIST, LENGTH, BADGENAMES, SIZE):
         self.ID = ID
         self.URL = URL
         self.BADGENUM = BADGENUM
         self.BADGELIST = BADGELIST
         self.LENGTH = LENGTH
         self.BADGENAMES = BADGENAMES
+        self.SIZE = SIZE
 
 # Function getUrl()
 # Asks the user for the Game ID they want badges from and creates the given URL to the Set.
@@ -39,7 +40,7 @@ def getURL():
     id = input("What is the Game ID of the Game you want to get Badges from:\n")
 
     url = "https://retroachievements.org/game/"  + id
-    SET = RetroAchievementSet(id, url, 0, [], 0, [])
+    SET = RetroAchievementSet(id, url, 0, [], 0, [], 64)
     getImageLink()
 
 # Function getImageLink()
@@ -120,13 +121,24 @@ def downloadBadges():
 def getCollage():
     imageCollection = []
 
+    while True:
+        print("\nWould you like the images have padding to make them easier to see?")
+        choice = input("Continue: 1 - Yes, 0 - No\n")
+
+        if choice == "1" or choice == "0": break
+        else: print("ERROR: Invalid Input. Try again.\n")
+
+
     for i in range(SET.BADGENUM):
         image = cv2.imread(f'{i + 1}_' + SET.ID + '.png')
-        image = cv2.resize(image, (64,64))
+        if choice == "1":
+            SET.SIZE = 66
+            image = cv2.copyMakeBorder(image, 1,1,1,1, cv2.BORDER_CONSTANT, value=(255, 255, 255))
+        image = cv2.resize(image, (SET.SIZE,SET.SIZE))
         imageCollection.append(image)
 
     while True:
-        SET.LENGTH = int(input("How many badges/cheevos do you want per line: "))
+        SET.LENGTH = int(input("\nHow many badges/cheevos do you want per line: "))
         
         if SET.LENGTH <= SET.BADGENUM:
             break
@@ -137,7 +149,7 @@ def getCollage():
     vertical = combineHorizontals(horizontals)
 
     while True:
-        print("\nWould you like to delete the individual badge icons you downloaded? \n")
+        print("\nWould you like to delete the individual badge icons you downloaded?")
         choice = input("Continue: 1 - Yes, 0 - No\n")
 
         if choice == "1" or choice == "0": break
@@ -163,7 +175,7 @@ def changeDirectory():
 # Creates each of the rows and stores them in the collection of images.
 # Once horizontals are created the list is returned to getCollage().
 def createHorizontals(collection):
-    paddedImage = 255 * np.ones(shape=[64, 64, 3], dtype=np.uint8)
+    paddedImage = 255 * np.ones(shape=[SET.SIZE, SET.SIZE, 3], dtype=np.uint8)
     newHorizontals = []
     curHori = collection[0]
 
