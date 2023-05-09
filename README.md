@@ -30,7 +30,7 @@ Link - https://numpy.org/install/
 2. Move the Executable into any empty Folder.
 3. Double click and Execute the program.
 4. Follow the prompts on the screen.
-5. Once Closed the downloaded badges will be deleted and the user will be left with a collaged image called OLD.png.
+5. Once Closed the user will be left with a collaged image called OLD.png.
 
 # Notes:
 The program must be in an empty folder to ensure safe deletion of images. Note: Only badge images will be deleted.
