@@ -33,8 +33,7 @@ Link - https://numpy.org/install/
 5. Once Closed the downloaded badges will be deleted and the user will be left with a collaged image called OLD.png.
 
 # Notes:
-The program must be in an empty folder to ensure safe deletion of images. The program deletes every image from the folder other than the resulted collage. I am not responsible if you delete an important image by accident via this program's completion. You have been warned. This will be fixed eventually.
-I also do not condone using this tool to use the badges for purposes other than collaging them and using them on RetroAchievement's Discord.
+The program must be in an empty folder to ensure safe deletion of images. Note: Only badge images will be deleted.
 
 
 
