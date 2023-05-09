@@ -9,8 +9,9 @@ Example :
 If the user enters 985 they will be given the badges for https://retroachievements.org/game/985.
 In this case. The game is Kirby's Avalanche | Kirby's Ghost Trap.
 Once correct ID is confirmed the badges are downloaded from the site.
-Once Downloads are complete the user is asked for how many badges they would like per line.
-Afterwards the images are then collaged into one file and the downloaded images are deleted.
+Once Downloads are complete the user is asked if they would like the images to be padded or have an outline to help distinguish badges from eachother.
+Then the user is asked how many achievements they would like to see on 1 line.
+Afterwards the images are then collaged into one file and the the user confirms whether or not they would like the images downloaded to be deleted.
 
 # Libraries
 ## Requests
