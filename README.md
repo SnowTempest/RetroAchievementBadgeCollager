@@ -33,8 +33,6 @@ Note: The badges will be untouched and you can safely be assured nothing will ha
 Link - https://pypi.org/project/requests/
 ## OS
 Link - https://docs.python.org/3/library/os.html
-## BS4
-Link - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 ## CV2
 Link - https://pypi.org/project/opencv-python/
 ## Numpy
@@ -46,7 +44,7 @@ Link - https://numpy.org/install/
 2. Move the Executable into any empty Folder.
 3. Double click and Execute the program.
 4. Follow the prompts on the screen.
-5. Once Closed the user will be left with a collaged image called OLD.png.
+5. Depending on the Mode the user will be left an image in the program directory with their desired collage.
 
 # Notes:
 The program must be in an empty folder to ensure safe deletion of images. Note: Only badge images will be deleted.
