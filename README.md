@@ -4,6 +4,32 @@ RetroAchievements Badge Scraper. Scrapes the given game ID for its badges and au
 NEW **
 Now has the ability to collage your own badges straight from your computer into a collage that can be used for the Icon-Gauntlet.
 
+## Setup
+
+1. **Download**: Download the RABadgeCollager.zip file from the [Releases](https://github.com/SnowTempest/RetroAchievementBadgeCollager/releases/) section of this repository.
+
+2. **Unzip**: Unzip the downloaded zip file to receive the executable for the program and the config file.
+
+3. **Get API Key**: Go to [Retroachievements Control Panel](https://retroachievements.org/controlpanel.php) and copy your Web API key from the Keys section.
+
+4. **Open Config File**: Open the `config.json` file with any text editor of your choice.
+
+5. **Update Configurations**:
+   - Replace the placeholder `"YOUR_API_KEY"` with your copied API key inside the quotes for the `"api_key"` field.
+   - Replace the placeholder `"YOUR_USERNAME"` with your Retroachievements username inside the quotes for the `"username"` field.
+   - Ensure not to delete the quotes accidentally. The updated fields should look like `"your_actual_api_key"` and `"your_username"`.
+
+6. **Save Config File**: Save the changes to the `config.json` file.
+
+7. **Run Program**: Now, run the `RABadgeCollager.exe` program normally.
+
+8. **Troubleshooting**: If you encounter issues with API fetch, double-check that you have pasted your Web API Key correctly into the `config.json` file. If you're unsure about the file's layout, feel free to contact AdeptTempest on RA's Discord.
+
+## Support
+
+If you encounter any difficulties during setup or usage, please don't hesitate to open an issue in this repository or contact AdeptTempest on RA's Discord for assistance.
+
+
 # Usage
 The user chooses the mode they want to use:
 Mode 1 is collaging a badge set from the Retroachievements site.
