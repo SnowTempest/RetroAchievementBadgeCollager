@@ -1,6 +1,6 @@
 __author__ = "SnowTempest"
-__copyright__ = "Copyright (C) 2022 SnowTempest"
-__license__ = "NONE"
+__copyright__ = "Copyright (C) 2023 SnowTempest"
+__license__ = "GNU GENERAL PUBLIC LICENSE"
 __version__= "4.0"
 
 import cv2
@@ -16,7 +16,7 @@ from tkinter.filedialog import askopenfilenames
 #4.0 Changelog
 # Added the Retroachivements API
 # Removed the Need of URL in Set Class Object
-# Removed the Need of BADGENAMS in Set Class Object
+# Removed the Need of BADGENAMES in Set Class Object
 # Removed Deprecated Function retrieveURL()
 # Removed Deprecated Function storeImageLinks()
 # Removed Deprecated Function removeLocks()
